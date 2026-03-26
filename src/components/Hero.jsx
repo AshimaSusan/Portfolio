@@ -9,7 +9,7 @@ const Hero = () => {
         <img 
           src={`${import.meta.env.BASE_URL}avatar.png`} 
           alt="Background Avatar" 
-          className="w-full h-full object-cover object-left md:object-center opacity-100 dark:opacity-90"
+          className="w-full h-full object-cover object-right md:object-center opacity-100 dark:opacity-90"
         />
         {/* Protective gradients for text legibility. Top and Bottom on mobile, Left on desktop */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80 md:bg-gradient-to-r md:from-black/90 md:via-black/50 md:to-transparent"></div>
