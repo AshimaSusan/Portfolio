@@ -37,7 +37,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       />
       
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center relative z-10">
-        <a href="#" className="text-xl font-bold tracking-tighter">
+        <a href="#" className={`text-xl font-bold tracking-tighter ${scrolled ? 'text-primary-light dark:text-primary-dark' : 'text-white'}`}>
           ASG.
         </a>
 
@@ -47,14 +47,22 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-sm font-medium hover:text-secondary-light dark:hover:text-secondary-dark transition-colors"
+              className={`text-sm font-bold transition-colors ${
+                scrolled 
+                  ? 'text-primary-light/70 hover:text-primary-light dark:text-primary-dark/70 dark:hover:text-primary-dark' 
+                  : 'text-white/80 hover:text-white'
+              }`}
             >
               {link.name}
             </a>
           ))}
           <button 
             onClick={toggleDarkMode}
-            className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+            className={`p-2 rounded-full transition-colors ${
+              scrolled 
+                ? 'hover:bg-black/5 dark:hover:bg-white/10 text-primary-light dark:text-primary-dark' 
+                : 'hover:bg-white/20 text-white'
+            }`}
             aria-label="Toggle Dark Mode"
           >
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
@@ -65,13 +73,17 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div className="flex items-center space-x-4 md:hidden">
           <button 
             onClick={toggleDarkMode}
-            className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+            className={`p-2 rounded-full transition-colors ${
+              scrolled 
+                ? 'hover:bg-black/5 dark:hover:bg-white/10 text-primary-light dark:text-primary-dark' 
+                : 'hover:bg-white/20 text-white'
+            }`}
           >
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2"
+            className={`p-2 ${scrolled ? 'text-primary-light dark:text-primary-dark' : 'text-white'}`}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
