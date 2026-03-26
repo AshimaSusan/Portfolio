@@ -28,7 +28,7 @@ const Hero = () => {
         </motion.h1>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col justify-start md:justify-center items-center md:items-start w-full h-full min-h-screen pt-28 md:pt-0 pb-8 md:pb-0">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col justify-start md:justify-center items-center md:items-start w-full h-full min-h-screen pt-20 md:pt-0 pb-8 md:pb-0">
         {/* Text Content */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ const Hero = () => {
           className="flex flex-col items-center text-center md:items-start md:text-left max-w-xl flex-1 md:flex-none w-full justify-between md:justify-start md:mt-12"
         >
           {/* Top Section (Badge & Intro) */}
-          <div className="flex flex-col items-center md:items-start w-full mt-4 md:mt-0">
+          <div className="flex flex-col items-center md:items-start w-full mt-0">
             <span className="inline-block py-1.5 px-3 rounded-full bg-white/20 backdrop-blur-md text-xs font-bold mb-6 tracking-widest uppercase border border-white/20 shadow-sm text-white">
               Finance & Business Analytics Professional
             </span>
