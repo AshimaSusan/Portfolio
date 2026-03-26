@@ -11,8 +11,8 @@ const Hero = () => {
           alt="Background Avatar" 
           className="w-full h-full object-cover object-center opacity-100 dark:opacity-90"
         />
-        {/* Protective gradients for text legibility. Bottom on mobile, Left on desktop */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/90 md:via-black/50 md:to-transparent"></div>
+        {/* Protective gradients for text legibility. Top on mobile, Left on desktop */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/90 md:via-black/50 md:to-transparent"></div>
       </div>
 
       {/* Background Large Text */}
@@ -28,13 +28,13 @@ const Hero = () => {
         </motion.h1>
       </div>
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col justify-end md:justify-center items-center md:items-start pb-16 md:pb-0 w-full h-full min-h-screen pt-32">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col justify-start md:justify-center items-center md:items-start pb-16 md:pb-0 w-full h-full min-h-screen pt-32">
         {/* Text Content */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col items-center text-center md:items-start md:text-left max-w-xl mt-auto md:mt-12 w-full"
+          className="flex flex-col items-center text-center md:items-start md:text-left max-w-xl mt-4 md:mt-12 w-full"
         >
           <span className="inline-block py-1.5 px-3 rounded-full bg-white/20 backdrop-blur-md text-xs font-bold mb-6 tracking-widest uppercase border border-white/20 shadow-sm text-white">
             Finance & Business Analytics Professional
