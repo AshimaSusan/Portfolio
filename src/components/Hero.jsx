@@ -5,15 +5,14 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20" id="home">
       {/* Background Avatar Image with Faded Effect */}
-      <div className="absolute inset-0 z-0 flex justify-center items-center pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img 
           src={`${import.meta.env.BASE_URL}avatar.png`} 
           alt="Background Avatar" 
-          className="w-full h-full object-cover object-top opacity-30 dark:opacity-20 mix-blend-multiply dark:mix-blend-screen scale-105"
+          className="w-full h-full object-cover object-center opacity-40 dark:opacity-30"
         />
-        {/* Gradient overlays for smooth fading into background color */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background-light via-background-light/60 to-transparent dark:from-background-dark dark:via-background-dark/80 dark:to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background-light/40 to-transparent dark:from-background-dark/40 dark:to-transparent"></div>
+        {/* Soft edge fade for the bottom into the page content */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background-light via-transparent to-transparent dark:from-background-dark dark:via-transparent dark:to-transparent"></div>
       </div>
 
       {/* Background Large Text */}
