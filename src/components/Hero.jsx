@@ -9,7 +9,7 @@ const Hero = () => {
         <img 
           src={`${import.meta.env.BASE_URL}avatar.png`} 
           alt="Background Avatar" 
-          className="w-full h-full object-cover object-center opacity-40 dark:opacity-30"
+          className="w-full h-full object-cover object-center opacity-70 dark:opacity-50"
         />
         {/* Soft edge fade for the bottom into the page content */}
         <div className="absolute inset-0 bg-gradient-to-t from-background-light via-transparent to-transparent dark:from-background-dark dark:via-transparent dark:to-transparent"></div>
@@ -39,10 +39,10 @@ const Hero = () => {
           <span className="inline-block py-1 px-3 rounded-full bg-accent-light/80 dark:bg-accent-dark/80 backdrop-blur-sm text-sm font-semibold mb-6 tracking-wider uppercase border border-black/5 dark:border-white/5 shadow-sm">
             Finance & Business Analytics Professional
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 drop-shadow-lg">
             Hi, I'm <span className="text-[#a58d7b] dark:text-[#c4a993]">Ashima.</span>
           </h1>
-          <p className="text-lg md:text-xl text-secondary-light dark:text-secondary-dark mb-10 leading-relaxed drop-shadow-sm max-w-2xl font-medium">
+          <p className="text-lg md:text-xl text-secondary-light dark:text-secondary-dark mb-10 leading-relaxed drop-shadow-md max-w-2xl font-medium">
             I specialize in financial analysis, reporting, and data-driven decision making. I transform financial data into actionable insights using modern tools and AI.
           </p>
           
