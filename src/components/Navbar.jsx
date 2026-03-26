@@ -25,10 +25,18 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'py-4 glass' : 'py-6 bg-transparent'
+        scrolled ? 'py-4' : 'py-6'
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+      {/* Background overlay to avoid nested backdrop blur bugs */}
+      <div 
+        className={`absolute inset-0 transition-all duration-300 ${
+          scrolled ? 'glass opacity-100' : 'bg-transparent opacity-0'
+        }`}
+        style={{ zIndex: -1 }}
+      />
+      
+      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center relative z-10">
         <a href="#" className="text-xl font-bold tracking-tighter">
           ASG.
         </a>
