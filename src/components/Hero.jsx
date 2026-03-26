@@ -12,7 +12,7 @@ const Hero = () => {
           className="w-full h-full object-cover object-center opacity-100 dark:opacity-90"
         />
         {/* Protective gradients for text legibility. Bottom on mobile, Left on desktop */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background-light via-background-light/80 to-transparent md:bg-gradient-to-r md:from-background-light/95 md:via-background-light/70 md:to-transparent dark:from-background-dark dark:via-background-dark/90 md:dark:from-background-dark/95 md:dark:via-background-dark/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent md:bg-gradient-to-r md:from-background-light/80 md:via-background-light/40 md:to-transparent dark:from-background-dark/90 dark:via-background-dark/50 md:dark:from-background-dark/85 md:dark:via-background-dark/40"></div>
       </div>
 
       {/* Background Large Text */}
