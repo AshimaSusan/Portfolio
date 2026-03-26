@@ -61,7 +61,7 @@ const Hero = () => {
           <div className="relative w-64 h-64 md:w-96 md:h-96">
             <div className="absolute inset-0 bg-accent-light dark:bg-accent-dark rounded-full blur-3xl opacity-50 animate-pulse"></div>
             <img 
-              src="/avatar.png" 
+              src={`${import.meta.env.BASE_URL}avatar.png`} 
               alt="Ashima Susan George" 
               className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
             />
